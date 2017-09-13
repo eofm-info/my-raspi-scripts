@@ -1,0 +1,6 @@
+zabbix_ip: 192.168.1.1
+nasne:
+    - name: nasne1
+      ip: 192.168.1.2
+    - name: nasne2
+      ip: 192.168.1.3
