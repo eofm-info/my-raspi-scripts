@@ -43,7 +43,7 @@ cnf['nasne'].each do |nasne|
   end
 
   data = []
-  data << buildSendData(nasne['name'], 'hdd_count', hdd_list['number'])
+  data << buildSendData(nasne['name'], 'hdd_count', hdd_list['HDD'][0]['mountStatus'] + hdd_list['HDD'][1]['mountStatus'])
   data << buildSendData(nasne['name'], 'hdd0_free', hdd0_info['HDD']['freeVolumeSize'])
   data << buildSendData(nasne['name'], 'hdd0_used', hdd0_info['HDD']['usedVolumeSize'])
   data << buildSendData(nasne['name'], 'hdd1_free', hdd1_info['HDD']['freeVolumeSize'])
