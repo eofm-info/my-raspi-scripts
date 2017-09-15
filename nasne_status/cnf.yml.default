@@ -4,3 +4,4 @@ nasne:
       ip: 192.168.1.2
     - name: nasne2
       ip: 192.168.1.3
+slack_webhook_url: Slack webhook URL

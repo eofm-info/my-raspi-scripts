@@ -5,6 +5,7 @@ require 'net/http'
 require 'uri'
 require 'json'
 require 'socket'
+require 'slack/incoming/webhooks'
 
 def buildSendData(host, key, value)
     return <<-JSON
@@ -38,7 +39,8 @@ cnf['nasne'].each do |nasne|
     hdd1_info = JSON.parse(Net::HTTP.get(ep[:hdd1_info]))
     rec_list  = JSON.parse(Net::HTTP.get(ep[:rec_list]))
   rescue => e
-    # todo: err
+    slack = Slack::Incoming::Webhooks.new cnf['slack_webhook_url']
+    slack.post 'ERROR: ' + e.message + "\n" + e.backtrace.to_s
     next
   end
 
