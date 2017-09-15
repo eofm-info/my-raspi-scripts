@@ -23,3 +23,6 @@ nasne の情報を取得して、Zabbix へ送りつけるかんたんなスク�
 
 `cnf.yml` の `nasne` の配列に追加すれば、きっと数が増えても大丈夫ですが、HDD は増設することを前提としています。nasne に HDD 増設せずに使っている人なんてきっといません。
 
+下記一連の連載、参考にさせていただきましたm(_ _)m
+
+[これから始めるZabbix Sender(1) サーバにデータを送るには？](http://pocketstudio.jp/log3/2015/01/07/howto-use-zabbix-sender/)
