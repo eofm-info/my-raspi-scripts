@@ -40,7 +40,7 @@ cnf['nasne'].each do |nasne|
     rec_list  = JSON.parse(Net::HTTP.get(ep[:rec_list]))
   rescue => e
     slack = Slack::Incoming::Webhooks.new cnf['slack_webhook_url']
-    slack.post 'ERROR: ' + e.message + "\n" + e.backtrace.to_s
+    slack.post '@channel ERROR: ' + e.message + "\n" + e.backtrace.to_s
     next
   end
 
