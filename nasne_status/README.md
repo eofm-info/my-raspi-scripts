@@ -14,6 +14,7 @@ nasne の情報を取得して、Zabbix へ送りつけるかんたんなスク�
 - rec_count
     - 録画件数です
     - 1000 を超えると録画できなくなるという言い伝えがあるため監視しています。なぜ 1000 なのか……
+    - だそうです！ [今日から｢nasne(ナスネ)™｣がVer.2.60にアップデート！ 最大録画件数が1,000件から3,000件に大幅拡張！ | PlayStation.Blog](https://www.jp.playstation.com/blog/detail/5997/20171116-nasne.html)
 
 ## その他
 
